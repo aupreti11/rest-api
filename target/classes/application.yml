@@ -1,0 +1,18 @@
+#This configuration file for project
+
+# yml file is same as application.properties file, we can convert .properties to yml online too
+server:
+    servlet:
+        context-path: /banking2
+        
+spring:
+    datasource:
+        password: amritupreti
+        url: jdbc:mysql://localhost:3306/credit_store_db?createDatabaseIfNotExist=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
